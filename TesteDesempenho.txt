@@ -1,0 +1,15 @@
+a. Qual método teve o menor número de comparações em média?
+A Busca Binária Iterativa teve o menor número de comparações em média (12.32), com a Pesquisa Fibonacci sendo muito próxima (12.83). Ambas foram significativamente mais eficientes em termos de comparações do que a Pesquisa por Salto, que teve 99.27 comparações.
+
+b. Em quais situações você acha que cada método seria mais apropriado?
+
+    Busca Binária Iterativa: É uma escolha excelente para listas ordenadas que precisam ser pesquisadas frequentemente, por sua simplicidade e eficiência.
+    Pesquisa por Salto (Jump Search): Pode ser mais útil em listas que são muito grandes e armazenadas em estruturas de dados que permitem fácil acesso por blocos (como bases de dados ou sistemas distribuídos).
+    Pesquisa Fibonacci: Ideal para listas ordenadas grandes quando a eficiência em termos de comparações é crítica, mas é mais complexa de implementar. Pode ser útil em hardware específico ou em sistemas onde os acessos sequenciais são mais rápidos que aleatórios.
+
+c. Como a ordenação da lista afeta a eficiência de cada método?
+Todos os três métodos exigem listas ordenadas para funcionarem corretamente. Se a lista não estiver ordenada:
+
+    Busca Binária: Se torna inválida e ineficiente, porque a estratégia de dividir a lista ao meio depende da ordenação.
+    Pesquisa por Salto: Igualmente ineficiente, pois os saltos são feitos com base na suposição de ordenação.
+    Pesquisa Fibonacci: Também se torna ineficaz, pois a divisão baseada na sequência de Fibonacci assume que a lista é ordenada.
